@@ -1,18 +1,57 @@
-html {
+:root {
+  --raisin-black: #231f20ff;
+  --international-orange-golden-gate-bridge: #bb4430ff;
+  --middle-blue: #7ebdc2ff;
+  --medium-champagne: #f3dfa2ff;
+  --linen: #efe6ddff;
   height: 100%;
+  padding: 1em;
+  color: var(--medium-champagne);
 }
+
+* {
+  font-family: "Life Savers", cursive;
+}
+
 body {
-  height: 100%;
-  overflow: hidden;
   display: grid;
   place-content: center;
+  background-color: var(--middle-blue);
 }
+
 #generator {
   height: 400px;
   width: 400px;
-  border: black 2px solid;
-}
-.options {
+  border: var(--international-orange-golden-gate-bridge) 5px dotted;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 1px solid var(--international-orange-golden-gate-bridge);
+  text-align: center;
+  background-color: var(--linen);
+}
+#generated-password {
+  height: 2em;
+  margin: 1em;
+  width: 75%;
+  font-size: 2em;
+  border: 3px solid var(--international-orange-golden-gate-bridge);
+}
+button {
+  margin: 0 1em;
+  height: 2em;
+  font-size: 1em;
+  border: var(--international-orange-golden-gate-bridge) 3px solid;
+}
+.options {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
 }

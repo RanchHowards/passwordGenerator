@@ -1,4 +1,5 @@
 const generate = <HTMLDivElement>document.getElementById("generate");
+const copyButton = <HTMLButtonElement>document.getElementById("copy");
 const generatedPassword = <HTMLInputElement>(
   document.getElementById("generated-password")
 );
@@ -17,7 +18,17 @@ const numberCheckbox = <HTMLInputElement>(
 const symbolCheckbox = <HTMLInputElement>(
   document.getElementById("symbols-checkbox")
 );
+function copyPassword() {
+  if (generatedPassword.value !== "") {
+    navigator.clipboard
+      .writeText(generatedPassword.value)
+      .then(() => alert("Copied to the clipboard"))
+      .catch(() => alert("Uh oh... Something went wrong"));
+  }
+}
 
+copyButton.onclick = () => copyPassword();
+generatedPassword.onclick = () => copyPassword();
 const arrayOfOptions = [
   uppercaseCheckbox,
   lowercaseCheckbox,
