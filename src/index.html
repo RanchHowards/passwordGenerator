@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Password Generator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body>
+    <div id="generator">
+      <button id="generate">Generate!</button>
+      <input type="text/" id="generated-password" />
+      <div class="options">
+        <label for="length"
+          >Length<input
+            type="number"
+            name="length"
+            value="20"
+            id="length-input"
+        /></label>
+        <label for="uppercase"
+          >Uppercase<input
+            type="checkbox"
+            name="uppercase"
+            id="uppercase-checkbox"
+        /></label>
+        <label for="lowercase"
+          >Lowercase<input
+            type="checkbox"
+            name="lowercase"
+            id="lowercase-checkbox"
+        /></label>
+        <label for="numbers"
+          >Numbers<input type="checkbox" name="numbers" id="numbers-checkbox"
+        /></label>
+        <label for="symbols"
+          >Symbols<input type="checkbox" name="symbols" id="symbols-checkbox"
+        /></label>
+      </div>
+    </div>
+
+    <script src="../dist/index.js" async defer></script>
+  </body>
+</html>

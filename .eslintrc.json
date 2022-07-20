@@ -1,5 +1,5 @@
 {
   "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
-  "ignorePatterns": ["./dist", "./node_modules"],
+  "ignorePatterns": ["dist/", "node_modules/"],
   "parserOptions": { "project": "tsconfig.json" }
 }
